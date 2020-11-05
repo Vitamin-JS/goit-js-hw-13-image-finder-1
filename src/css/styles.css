@@ -1,0 +1,30 @@
+body {
+    min-height: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ruslan Display', cursive;
+    background-image: url(../img/441.png);
+    background-size: cover;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin-top: 30px;
+    width: 300px;
+    height: 40px;
+    font-family: 'Ruslan Display', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.svg {
+    text-shadow: 5px 5px 8px black;
+}

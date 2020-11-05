@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <form class="search-form" id="search-form">
+        <svg width="600" height="100">
+        <title>Лого для поисковика</title>
+        <defs>
+          <pattern
+            id="filler"
+            patternUnits="userSpaceOnUse"
+            width="400"
+            height="200"
+          >
+            <image
+              xlink:href="img/442.jpg"
+              width="400"
+              height="200"
+              preserveAspectRatio="none"
+            />
+          </pattern>
+        </defs>
+        <text class="svg" x="0" y="70%" font-size="100" fill="url(#filler)">
+          Пошукач
+        </text>
+      </svg>
+        <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
+    </form>
+    <ul class="gallery">
+        <!-- Список <li> с карточками изображений -->
+    </ul>
+</body>
+
+</html>
