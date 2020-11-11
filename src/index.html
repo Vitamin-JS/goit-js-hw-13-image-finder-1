@@ -4,39 +4,53 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ImageFinder</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <form class="search-form" id="search-form">
-        <svg width="600" height="100">
-        <title>Лого для поисковика</title>
-        <defs>
-          <pattern
-            id="filler"
-            patternUnits="userSpaceOnUse"
-            width="400"
-            height="200"
-          >
-            <image
-              xlink:href="img/442.jpg"
-              width="400"
-              height="200"
-              preserveAspectRatio="none"
-            />
-          </pattern>
-        </defs>
-        <text class="svg" x="0" y="70%" font-size="100" fill="url(#filler)">
-          Пошукач
-        </text>
-      </svg>
-        <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
+    <!-- Main field -->
+    <ul class="gallery js-response"></ul>
+
+    <!-- Search form -->
+    <class class="search-form" id="search-form">
+        <label class="search">
+        <input
+          class="search-input"
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Введіть запит..."
+        />
+        <button
+          class="search-clear js-clear"
+          type="button"
+          title="Clear"
+        ></button>
+      </label>
+
+
+    </class>
     </form>
-    <ul class="gallery">
-        <!-- Список <li> с карточками изображений -->
-    </ul>
+
+    <!-- Button "Load more" -->
+    <button class="load-btn visually-hidden" type="button">
+      <div class="arrow-7">
+    <span></span>
+    <span></span>
+    <span></span>
+      </div>
+</button>
+
+    <!-- Popup -->
+    <div class="lightbox js-lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <img class="lightbox-image" src="" alt="" />
+        </div>
+        <button class="lightbox-btn-close js-close" type="button" title="Close"></button>
+    </div>
 </body>
 
 </html>
