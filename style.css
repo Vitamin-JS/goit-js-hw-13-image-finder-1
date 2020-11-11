@@ -163,7 +163,7 @@ img {
 } */
 
 .gallery {
-    max-width: calc(100% - 700px);
+    max-width: calc(100% - 850px);
     margin: 75px auto 10px;
     display: -webkit-box;
     display: -ms-flexbox;
