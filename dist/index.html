@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageFinder</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+    <!-- Main field -->
+    <ul class="gallery js-response"></ul>
+
+    <!-- Search form -->
+    <class class="search-form" id="search-form">
+        <label class="search">
+        <input
+          class="search-input"
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Введіть запит..."
+        />
+        <button
+          class="search-clear js-clear"
+          type="button"
+          title="Clear"
+        ></button>
+      </label>
+
+
+    </class>
+    </form>
+
+    <!-- Button "Load more" -->
+    <button class="load-btn visually-hidden" type="button">
+      <div class="arrow-7">
+    <span></span>
+    <span></span>
+    <span></span>
+      </div>
+</button>
+
+    <!-- Popup -->
+    <div class="lightbox js-lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-content">
+            <img class="lightbox-image" src="" alt="" />
+        </div>
+        <button class="lightbox-btn-close js-close" type="button" title="Close"></button>
+    </div>
+<script src="my-webpack-bundle.js"></script></body>
+
+</html>
