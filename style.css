@@ -163,7 +163,8 @@ img {
 } */
 
 .gallery {
-    max-width: calc(100% - 850px);
+    padding-right: 18px;
+    max-width: 865px;
     margin: 75px auto 10px;
     display: -webkit-box;
     display: -ms-flexbox;
